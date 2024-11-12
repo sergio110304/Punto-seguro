@@ -40,6 +40,67 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'HomePage',
           path: '/homePage',
           builder: (context, params) => const HomePageWidget(),
+        ),
+        FFRoute(
+          name: 'HomePageOption',
+          path: '/homePageOption',
+          builder: (context, params) => const HomePageOptionWidget(),
+        ),
+        FFRoute(
+          name: 'Register',
+          path: '/register',
+          builder: (context, params) => const RegisterWidget(),
+        ),
+        FFRoute(
+          name: 'Inicio',
+          path: '/inicio',
+          builder: (context, params) => const InicioWidget(),
+        ),
+        FFRoute(
+          name: 'Login',
+          path: '/login',
+          builder: (context, params) => const LoginWidget(),
+        ),
+        FFRoute(
+          name: 'SettingPage',
+          path: '/settingPage',
+          builder: (context, params) => const SettingPageWidget(),
+        ),
+        FFRoute(
+          name: 'UpdateInfo',
+          path: '/updateInfo',
+          builder: (context, params) => const UpdateInfoWidget(),
+        ),
+        FFRoute(
+          name: 'Radar',
+          path: '/radar',
+          builder: (context, params) => RadarWidget(
+            location: params.getParam<LatLng>(
+              'location',
+              ParamType.LatLng,
+              isList: true,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'Rutas',
+          path: '/rutas',
+          builder: (context, params) => const RutasWidget(),
+        ),
+        FFRoute(
+          name: 'Consejos',
+          path: '/consejos',
+          builder: (context, params) => const ConsejosWidget(),
+        ),
+        FFRoute(
+          name: 'BuscarLugar',
+          path: '/buscarLugar',
+          builder: (context, params) => const BuscarLugarWidget(),
+        ),
+        FFRoute(
+          name: 'Contactos',
+          path: '/contactos',
+          builder: (context, params) => const ContactosWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
