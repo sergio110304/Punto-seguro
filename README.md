@@ -15,6 +15,9 @@ Los usuarios pueden visualizar los cambios climáticos en tiempo real según su 
 
 Punto Seguro no es una aplicación del clima. Es una plataforma de preparación y respuesta comunitaria ante emergencias, integrando datos climáticos, geográficos y de seguridad pública en una sola plataforma.
 
+## Preview del prototipo
+https://app.flutterflow.io/share/punto-seguro-vs7akq
+
 ## Link repositorio de API 
 https://github.com/sergio110304/Punto_seguro_api
 
